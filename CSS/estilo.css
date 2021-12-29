@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Righteous', cursive;
+    background-image: url(../img/fondoN1.jpg);
+
+}
+
+main{
+    border: 10px solid rgb(60, 189, 0);
+    border-radius: 20px;
+    background-color: rgb(60, 189, 0);
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+    width: 10em;
+    vertical-align:middle;
+    margin-top: 5%;
+}
+main ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+}
+
+main ul li{
+    border: 5px solid rgb(60, 189, 0);
+    border-radius: 30px;
+    background-color: rgb(215, 255, 205);
+    padding: 0.3em;
+}
+main ul a {
+    text-decoration: none;
+    color: black; 
+}
