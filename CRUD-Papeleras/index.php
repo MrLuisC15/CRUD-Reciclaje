@@ -26,7 +26,13 @@
             </ul>
         </nav>
         <main>
-            
+            <h1>
+                holaa
+            </h1>
+            <form method="post" enctype="multipart/form-data" action="GuardarFichero.php">
+                <label>suba los archivos</label>
+                <input type="file" name="imagen">
+            </form>
         </main>
     </body>
 </html>
