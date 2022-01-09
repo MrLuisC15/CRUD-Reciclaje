@@ -1,3 +1,8 @@
+<?php
+require_once "metodos.php";
+
+$metodo = new Metodos();
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -26,13 +31,32 @@
             </ul>
         </nav>
         <main>
-            <h1>
-                holaa
-            </h1>
-            <form method="post" enctype="multipart/form-data" action="GuardarFichero.php">
-                <label>suba los archivos</label>
-                <input type="file" name="imagen">
+
+            <form method="post" enctype="multipart/form-data" action="guardararchivos.php">
+                <label>Papelera Azul</label>
+                <input name="nombre" type="text" placeholder="Nombre de la Imagen" required>
+                <input type="file" name="imagenazul">
+                <input type="submit" value="Subir">
             </form>
+            <form method="post" enctype="multipart/form-data" action="#">
+                <label>Papelera Verde</label>
+                <input name="nombre" type="text" placeholder="Nombre de la Imagen" required>
+                <input type="file" name="imagenverde">
+                <input type="submit" value="Subir">
+            </form>
+
+            <form method="post" enctype="multipart/form-data" action="#">
+                <label>Papelera Amarilla</label>
+                <input name="nombre" type="text" placeholder="Nombre de la Imagen" required>
+                <input type="file" name="imagenamarillo">
+                <input type="submit" value="Subir">
+            </form>
+            <?php
+            $metodo->subirImagenes();
+            ?>
         </main>
+
+
+
     </body>
 </html>
