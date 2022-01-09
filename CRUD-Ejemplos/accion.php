@@ -14,7 +14,7 @@
                 <a href="../index.html">
                     <li>Inicio</li>
                 </a>
-                <a href="../CRUD-Papeleras/index.html">
+                <a href="../CRUD-Papeleras/index.php">
                     <li>Papeleras</li>
                 </a>
                 <a href="../CRUD-Objetos/index.html">
