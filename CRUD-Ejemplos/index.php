@@ -14,7 +14,7 @@
                 <a href="../index.html">
                     <li>Inicio</li>
                 </a>
-                <a href="../CRUD-Papeleras/index.php">
+                <a href="../CRUD-Papeleras/index.html">
                     <li>Papeleras</li>
                 </a>
                 <a href="../CRUD-Objetos/index.html">
@@ -26,6 +26,11 @@
             </ul>
         </nav>
         <main>
+            <div id="anadir">
+                <a href="anadirEjemplo.html">
+                    <img src="./img/iconomas.png" alt="" heigth="20px">
+                </a>
+            </div>
             <article>
                 <div class="linea">
                     <ul id="primeraLinea">
@@ -34,24 +39,12 @@
                         <li>Imagen Papelera</li>
                     </ul>
                 </div>
-                <div class="linea">
-                    <a href="accion.php?id=1">
-                        <ul>
-                            <li>Imagen Objeto</li>
-                            <li>Descripcion</li>
-                            <li>Imagen Papelera</li>
-                        </ul>
-                    </a>
-                </div>
-                <div class="linea">
-                    <a href="accion.php?id=2">
-                        <ul>
-                            <li>Imagen Objeto</li>
-                            <li>Descripcion</li>
-                            <li>Imagen Papelera</li>
-                        </ul>
-                    </a>
-                </div>
+                <?php
+                    include('ejemplos.php');
+					$ejemplos = new Controlador();
+					$ejemplos->vista->mostrarEjemplos();
+
+                ?>
             </article>
         </main>
     </body>

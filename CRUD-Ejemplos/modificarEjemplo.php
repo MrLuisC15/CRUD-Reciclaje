@@ -29,14 +29,11 @@
             <article>
                 <a href="index.php">Volver</a>
                 <div>
-                    <?php
-                        include('ejemplos.php');
-                        $ejemplos = new Controlador();
-                        $ejemplos->vista->mostrarUnEjemplo($_GET['id']);
-
-                        echo '<a href="modificarEjemplo.php?id='.$_GET['id'].'">EDITAR</a>';
-                        echo '<a href="redireccionar.php?direccion=borrarEjemplo&id='.$_GET['id'].'">BORRAR</a>';
-                    ?>
+                <?php
+                    include('ejemplos.php');
+                    $ejemplos = new Controlador();
+                    $ejemplos->vista->modificarEjemplo($_GET['id']);
+                ?>
                 </div>
             </article>
         </main>

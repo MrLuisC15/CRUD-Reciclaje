@@ -43,13 +43,14 @@ nav ul a {
 }
 
 
-main {
+article {
     border: 15px solid rgb(60, 189, 0);
     border-radius: 20px;
     background-color: rgb(215, 255, 205);
     width: 100%;
-    height: 320px;
-    overflow: hidden;
+    min-height: 320px;
+    max-height: 75vh;
+    overflow: auto;
     position: relative;
     top: 20px;
     text-align: center;
@@ -57,8 +58,11 @@ main {
 main article ul{
     display: grid;
     list-style-type: none;
-    grid-template-columns: auto auto auto;
-    grid-gap: 30px;
+    grid-template-columns: 200px 400px 200px;
+}
+
+main article ul li{
+    border: 1px solid green;
 }
 
 main article #primeraLinea{
@@ -68,4 +72,13 @@ main article #primeraLinea{
 main article a{
     text-decoration: none;
     color: black; 
+}
+
+main article .linea img{
+    height: 100px;
+}
+
+main #anadir{
+    margin-top:20px;
+    text-align: center;
 }

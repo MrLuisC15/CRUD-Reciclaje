@@ -29,14 +29,16 @@
             <article>
                 <a href="index.php">Volver</a>
                 <div>
-                    <?php
-                        include('ejemplos.php');
-                        $ejemplos = new Controlador();
-                        $ejemplos->vista->mostrarUnEjemplo($_GET['id']);
-
-                        echo '<a href="modificarEjemplo.php?id='.$_GET['id'].'">EDITAR</a>';
-                        echo '<a href="redireccionar.php?direccion=borrarEjemplo&id='.$_GET['id'].'">BORRAR</a>';
-                    ?>
+                    <form action="redireccionar.php?direccion=anadirEjemplo" method="post">
+                        <label>Imagen Objeto:</label><br />
+                        <input type="text" name="imgObjeto" required><br />
+                        <label>Descripción:</label><br />
+                        <input type="text" name="descripcion" required><br />
+                        <label>Imagen Papelera:</label><br />
+                        <input type="text" name="imgPapelera" required><br />
+                    
+                        <input type="submit" name="enviar" id="solicitar" value="Añadir">
+                    </form>
                 </div>
             </article>
         </main>
